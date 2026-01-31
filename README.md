@@ -2,6 +2,8 @@
 
 A multilingual news homepage starter demonstrating translation support with Drupal and Next.js. Features content in **English**, **Spanish**, and **French**.
 
+![Homepage Screenshot](docs/screenshot-homepage.png)
+
 ## Features
 
 - **Multilingual Content** - News articles in 3 languages with language filtering
@@ -10,6 +12,10 @@ A multilingual news homepage starter demonstrating translation support with Drup
 - **Drupal Backend** - Headless CMS with GraphQL API
 - **Next.js Frontend** - App Router with server components
 - **Tailwind CSS** - Modern styling with responsive design
+
+### Article Detail Page
+
+![Detail Page Screenshot](docs/screenshot-detail.png)
 
 ## Quick Start
 
@@ -74,6 +80,8 @@ decoupled-lang/
 ├── app/
 │   ├── [locale]/           # Locale-specific pages
 │   │   ├── page.tsx        # News homepage
+│   │   ├── [...slug]/      # Article detail pages
+│   │   │   └── page.tsx
 │   │   └── components/     # Locale-aware components
 │   │       ├── Header.tsx
 │   │       ├── LanguageSwitcher.tsx
@@ -83,6 +91,9 @@ decoupled-lang/
 │   │   ├── graphql/        # GraphQL proxy
 │   │   └── revalidate/     # ISR revalidation
 │   └── layout.tsx          # Root layout
+├── docs/
+│   ├── screenshot-homepage.png
+│   └── screenshot-detail.png
 ├── lib/
 │   ├── apollo-client.ts    # GraphQL client
 │   ├── queries.ts          # GraphQL queries
