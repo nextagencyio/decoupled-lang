@@ -20,6 +20,7 @@ export const translations = {
     setupDescription: 'Run the setup script to configure your Drupal backend and import sample content.',
     language: 'Language',
     home: 'Home',
+    backToNews: 'Back to News',
   },
   es: {
     siteName: 'Noticias Decoupled',
@@ -32,6 +33,7 @@ export const translations = {
     setupDescription: 'Ejecuta el script de configuración para configurar tu backend Drupal e importar contenido de ejemplo.',
     language: 'Idioma',
     home: 'Inicio',
+    backToNews: 'Volver a Noticias',
   },
   fr: {
     siteName: 'Actualités Decoupled',
@@ -44,6 +46,7 @@ export const translations = {
     setupDescription: 'Exécutez le script de configuration pour configurer votre backend Drupal et importer du contenu exemple.',
     language: 'Langue',
     home: 'Accueil',
+    backToNews: 'Retour aux Actualités',
   },
 } as const
 

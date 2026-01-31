@@ -49,6 +49,9 @@ export const GET_NEWS_BY_PATH = gql`
             id
             title
             path
+            langcode {
+              id
+            }
             created {
               timestamp
             }
@@ -71,13 +74,6 @@ export const GET_NEWS_BY_PATH = gql`
                 url
                 width
                 height
-              }
-            }
-            language {
-              ... on TermLanguage {
-                id
-                name
-                code
               }
             }
           }
