@@ -2,6 +2,9 @@ export interface DrupalNode {
   id: string
   title: string
   path: string
+  langcode?: {
+    id: string
+  }
   created: {
     timestamp: number
   }
@@ -10,10 +13,11 @@ export interface DrupalNode {
   }
 }
 
-export interface LanguageTerm {
-  id: string
-  name: string
-  code: string
+export interface Translation {
+  path: string
+  langcode: {
+    id: string
+  }
 }
 
 export interface DrupalNewsArticle extends DrupalNode {
@@ -35,7 +39,7 @@ export interface DrupalNewsArticle extends DrupalNode {
       height: number
     }>
   }
-  language?: LanguageTerm[]
+  translations?: Translation[]
 }
 
 export interface NewsArticleData {

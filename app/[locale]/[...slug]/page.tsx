@@ -85,9 +85,12 @@ export default async function ArticlePage({ params }: PageProps) {
   // Image URL with HTTPS
   const imageUrl = article.image?.url?.replace(/^http:/, 'https:')
 
+  // Get translations for language switcher
+  const translations = article.translations || []
+
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header locale={validLocale} />
+      <Header locale={validLocale} translations={translations} currentPath={path} />
 
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Back link */}

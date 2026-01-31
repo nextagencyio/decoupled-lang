@@ -48,14 +48,11 @@ export default async function HomePage({ params }: PageProps) {
   try {
     const { data } = await client.query<NewsArticleData>({
       query: GET_NEWS_BY_LANGUAGE,
-      variables: { first: 20 },
+      variables: { first: 20, langcode: validLocale },
     })
 
-    // Filter articles by URL path prefix (e.g., /en/, /es/, /fr/)
-    articles = (data?.nodeNewsArticles?.nodes || []).filter((article) => {
-      if (!article.path) return false
-      return article.path.startsWith(`/${validLocale}/`)
-    })
+    // Articles are already filtered by langcode in the query
+    articles = data?.nodeNewsArticles?.nodes || []
   } catch (e) {
     console.error('Error fetching news:', e)
     error = e instanceof Error ? e.message : 'Failed to fetch news'

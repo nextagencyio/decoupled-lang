@@ -1,16 +1,18 @@
 'use client'
 
 import Link from 'next/link'
-import { Locale } from '@/lib/types'
+import { Locale, Translation } from '@/lib/types'
 import { t } from '@/lib/i18n'
 import LanguageSwitcher from './LanguageSwitcher'
 import { Newspaper } from 'lucide-react'
 
 interface HeaderProps {
   locale: Locale
+  translations?: Translation[]
+  currentPath?: string
 }
 
-export default function Header({ locale }: HeaderProps) {
+export default function Header({ locale, translations, currentPath }: HeaderProps) {
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,7 +40,11 @@ export default function Header({ locale }: HeaderProps) {
             </Link>
 
             {/* Language Switcher */}
-            <LanguageSwitcher currentLocale={locale} />
+            <LanguageSwitcher
+              currentLocale={locale}
+              translations={translations}
+              currentPath={currentPath}
+            />
           </nav>
         </div>
       </div>

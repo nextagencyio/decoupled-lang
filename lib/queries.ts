@@ -1,13 +1,16 @@
 import { gql } from '@apollo/client'
 
-// Get news articles - filtered by URL path on the frontend
+// Get news articles with translations
 export const GET_NEWS_BY_LANGUAGE = gql`
-  query GetNewsByLanguage($first: Int = 10) {
-    nodeNewsArticles(first: $first, sortKey: CREATED_AT) {
+  query GetNewsByLanguage($first: Int = 10, $langcode: String) {
+    nodeNewsArticles(first: $first, sortKey: CREATED_AT, langcode: $langcode) {
       nodes {
         id
         title
         path
+        langcode {
+          id
+        }
         created {
           timestamp
         }
@@ -39,7 +42,7 @@ export const GET_NEWS_BY_LANGUAGE = gql`
   }
 `
 
-// Get a single news article by path
+// Get a single news article by path with translations
 export const GET_NEWS_BY_PATH = gql`
   query GetNewsByPath($path: String!) {
     route(path: $path) {
@@ -74,6 +77,12 @@ export const GET_NEWS_BY_PATH = gql`
                 url
                 width
                 height
+              }
+            }
+            translations {
+              path
+              langcode {
+                id
               }
             }
           }

@@ -2,19 +2,35 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Locale, locales } from '@/lib/types'
+import { Locale, locales, Translation } from '@/lib/types'
 import { languages } from '@/lib/i18n'
 import { ChevronDown, Globe } from 'lucide-react'
 import clsx from 'clsx'
 
 interface LanguageSwitcherProps {
   currentLocale: Locale
+  translations?: Translation[]
+  currentPath?: string
 }
 
-export default function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {
+export default function LanguageSwitcher({ currentLocale, translations, currentPath }: LanguageSwitcherProps) {
   const [isOpen, setIsOpen] = useState(false)
 
   const currentLanguage = languages[currentLocale]
+
+  // Build a map of locale -> path from translations
+  const translationPaths: Record<string, string> = {}
+  if (translations) {
+    translations.forEach((t) => {
+      if (t.langcode?.id && t.path) {
+        translationPaths[t.langcode.id] = t.path
+      }
+    })
+  }
+  // Add current path for current locale
+  if (currentPath) {
+    translationPaths[currentLocale] = currentPath
+  }
 
   return (
     <div className="relative">
@@ -48,11 +64,13 @@ export default function LanguageSwitcher({ currentLocale }: LanguageSwitcherProp
             {locales.map((locale) => {
               const lang = languages[locale]
               const isActive = locale === currentLocale
+              // Use translation path if available, otherwise fall back to homepage
+              const href = translationPaths[locale] || `/${locale}`
 
               return (
                 <Link
                   key={locale}
-                  href={`/${locale}`}
+                  href={href}
                   onClick={() => setIsOpen(false)}
                   className={clsx(
                     'flex items-center space-x-3 px-4 py-2 text-sm transition-colors',
