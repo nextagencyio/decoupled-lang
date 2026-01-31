@@ -1,31 +1,11 @@
 {
   "model": [
     {
-      "entity": "taxonomy_term",
-      "bundle": "language",
-      "label": "Language",
-      "description": "Language taxonomy for multilingual content filtering",
-      "fields": [
-        {
-          "id": "code",
-          "label": "Language Code",
-          "type": "string!",
-          "description": "ISO language code (e.g., en, es, fr)"
-        }
-      ]
-    },
-    {
       "bundle": "news_article",
       "label": "News Article",
       "description": "News articles with multilingual support",
       "body": true,
       "fields": [
-        {
-          "id": "language",
-          "label": "Language",
-          "type": "term(language)[]",
-          "description": "The language of this article"
-        },
         {
           "id": "summary",
           "label": "Summary",
@@ -43,37 +23,12 @@
   ],
   "content": [
     {
-      "id": "lang-en",
-      "type": "taxonomy_term.language",
-      "values": {
-        "name": "English",
-        "code": "en"
-      }
-    },
-    {
-      "id": "lang-es",
-      "type": "taxonomy_term.language",
-      "values": {
-        "name": "Español",
-        "code": "es"
-      }
-    },
-    {
-      "id": "lang-fr",
-      "type": "taxonomy_term.language",
-      "values": {
-        "name": "Français",
-        "code": "fr"
-      }
-    },
-
-    {
       "id": "news-tech-en",
       "type": "node.news_article",
+      "langcode": "en",
       "path": "/en/news/ai-transforms-healthcare",
       "values": {
         "title": "AI Transforms Healthcare Industry",
-        "language": ["lang-en"],
         "summary": "<p>Artificial intelligence is revolutionizing how doctors diagnose diseases and develop treatment plans, leading to faster and more accurate patient care.</p>",
         "body": "<p>The healthcare industry is experiencing a dramatic transformation thanks to artificial intelligence. Machine learning algorithms are now capable of analyzing medical images with unprecedented accuracy, often detecting early signs of diseases that human doctors might miss.</p><p>Hospitals around the world are implementing AI-powered diagnostic tools that can process thousands of X-rays, MRIs, and CT scans in minutes. This technology is particularly impactful in regions with limited access to specialist physicians.</p><p>Beyond diagnostics, AI is also being used to predict patient outcomes, optimize treatment plans, and accelerate drug discovery. The integration of these technologies promises to make healthcare more accessible and affordable for everyone.</p>",
         "image": {
@@ -86,15 +41,16 @@
     {
       "id": "news-tech-es",
       "type": "node.news_article",
+      "langcode": "es",
+      "translation_of": "news-tech-en",
       "path": "/es/noticias/ia-transforma-salud",
       "values": {
         "title": "La IA Transforma la Industria de la Salud",
-        "language": ["lang-es"],
-        "summary": "<p>La inteligencia artificial está revolucionando la forma en que los médicos diagnostican enfermedades y desarrollan planes de tratamiento.</p>",
-        "body": "<p>La industria de la salud está experimentando una transformación dramática gracias a la inteligencia artificial. Los algoritmos de aprendizaje automático ahora son capaces de analizar imágenes médicas con una precisión sin precedentes.</p><p>Los hospitales de todo el mundo están implementando herramientas de diagnóstico impulsadas por IA que pueden procesar miles de radiografías, resonancias magnéticas y tomografías en minutos.</p><p>Más allá del diagnóstico, la IA también se utiliza para predecir resultados de pacientes, optimizar planes de tratamiento y acelerar el descubrimiento de medicamentos.</p>",
+        "summary": "<p>La inteligencia artificial est\u00e1 revolucionando la forma en que los m\u00e9dicos diagnostican enfermedades y desarrollan planes de tratamiento.</p>",
+        "body": "<p>La industria de la salud est\u00e1 experimentando una transformaci\u00f3n dram\u00e1tica gracias a la inteligencia artificial. Los algoritmos de aprendizaje autom\u00e1tico ahora son capaces de analizar im\u00e1genes m\u00e9dicas con una precisi\u00f3n sin precedentes.</p><p>Los hospitales de todo el mundo est\u00e1n implementando herramientas de diagn\u00f3stico impulsadas por IA que pueden procesar miles de radiograf\u00edas, resonancias magn\u00e9ticas y tomograf\u00edas en minutos.</p><p>M\u00e1s all\u00e1 del diagn\u00f3stico, la IA tambi\u00e9n se utiliza para predecir resultados de pacientes, optimizar planes de tratamiento y acelerar el descubrimiento de medicamentos.</p>",
         "image": {
           "uri": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800",
-          "alt": "Médico usando tecnología IA",
+          "alt": "M\u00e9dico usando tecnolog\u00eda IA",
           "title": "IA en la Salud"
         }
       }
@@ -102,16 +58,17 @@
     {
       "id": "news-tech-fr",
       "type": "node.news_article",
+      "langcode": "fr",
+      "translation_of": "news-tech-en",
       "path": "/fr/actualites/ia-transforme-sante",
       "values": {
-        "title": "L'IA Transforme l'Industrie de la Santé",
-        "language": ["lang-fr"],
-        "summary": "<p>L'intelligence artificielle révolutionne la façon dont les médecins diagnostiquent les maladies et élaborent des plans de traitement.</p>",
-        "body": "<p>L'industrie de la santé connaît une transformation spectaculaire grâce à l'intelligence artificielle. Les algorithmes d'apprentissage automatique sont désormais capables d'analyser des images médicales avec une précision sans précédent.</p><p>Les hôpitaux du monde entier mettent en place des outils de diagnostic alimentés par l'IA qui peuvent traiter des milliers de radiographies, d'IRM et de scanners en quelques minutes.</p><p>Au-delà du diagnostic, l'IA est également utilisée pour prédire les résultats des patients, optimiser les plans de traitement et accélérer la découverte de médicaments.</p>",
+        "title": "L'IA Transforme l'Industrie de la Sant\u00e9",
+        "summary": "<p>L'intelligence artificielle r\u00e9volutionne la fa\u00e7on dont les m\u00e9decins diagnostiquent les maladies et \u00e9laborent des plans de traitement.</p>",
+        "body": "<p>L'industrie de la sant\u00e9 conna\u00eet une transformation spectaculaire gr\u00e2ce \u00e0 l'intelligence artificielle. Les algorithmes d'apprentissage automatique sont d\u00e9sormais capables d'analyser des images m\u00e9dicales avec une pr\u00e9cision sans pr\u00e9c\u00e9dent.</p><p>Les h\u00f4pitaux du monde entier mettent en place des outils de diagnostic aliment\u00e9s par l'IA qui peuvent traiter des milliers de radiographies, d'IRM et de scanners en quelques minutes.</p><p>Au-del\u00e0 du diagnostic, l'IA est \u00e9galement utilis\u00e9e pour pr\u00e9dire les r\u00e9sultats des patients, optimiser les plans de traitement et acc\u00e9l\u00e9rer la d\u00e9couverte de m\u00e9dicaments.</p>",
         "image": {
           "uri": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800",
-          "alt": "Médecin utilisant la technologie IA",
-          "title": "IA dans la Santé"
+          "alt": "M\u00e9decin utilisant la technologie IA",
+          "title": "IA dans la Sant\u00e9"
         }
       }
     },
@@ -119,10 +76,10 @@
     {
       "id": "news-climate-en",
       "type": "node.news_article",
+      "langcode": "en",
       "path": "/en/news/renewable-energy-milestone",
       "values": {
         "title": "Renewable Energy Reaches Historic Milestone",
-        "language": ["lang-en"],
         "summary": "<p>Solar and wind power now account for over 30% of global electricity generation, marking a significant step toward a sustainable future.</p>",
         "body": "<p>In a landmark achievement for the global fight against climate change, renewable energy sources have reached an unprecedented milestone. Solar and wind power combined now generate more than 30% of the world's electricity.</p><p>This transition has been driven by dramatic cost reductions in solar panel manufacturing and advances in wind turbine technology. Many countries are now finding that renewable energy is not just cleaner but also more economical than fossil fuels.</p><p>Energy experts predict that this trend will accelerate, with some projections showing renewables could account for 50% of global electricity by 2035. The shift is creating millions of green jobs and reducing carbon emissions worldwide.</p>",
         "image": {
@@ -135,32 +92,34 @@
     {
       "id": "news-climate-es",
       "type": "node.news_article",
+      "langcode": "es",
+      "translation_of": "news-climate-en",
       "path": "/es/noticias/energia-renovable-hito",
       "values": {
-        "title": "La Energía Renovable Alcanza un Hito Histórico",
-        "language": ["lang-es"],
-        "summary": "<p>La energía solar y eólica ahora representan más del 30% de la generación eléctrica mundial, marcando un paso significativo hacia un futuro sostenible.</p>",
-        "body": "<p>En un logro histórico para la lucha global contra el cambio climático, las fuentes de energía renovable han alcanzado un hito sin precedentes. La energía solar y eólica combinadas ahora generan más del 30% de la electricidad mundial.</p><p>Esta transición ha sido impulsada por reducciones dramáticas en los costos de fabricación de paneles solares y avances en la tecnología de turbinas eólicas.</p><p>Los expertos en energía predicen que esta tendencia se acelerará, con algunas proyecciones que muestran que las renovables podrían representar el 50% de la electricidad global para 2035.</p>",
+        "title": "La Energ\u00eda Renovable Alcanza un Hito Hist\u00f3rico",
+        "summary": "<p>La energ\u00eda solar y e\u00f3lica ahora representan m\u00e1s del 30% de la generaci\u00f3n el\u00e9ctrica mundial, marcando un paso significativo hacia un futuro sostenible.</p>",
+        "body": "<p>En un logro hist\u00f3rico para la lucha global contra el cambio clim\u00e1tico, las fuentes de energ\u00eda renovable han alcanzado un hito sin precedentes. La energ\u00eda solar y e\u00f3lica combinadas ahora generan m\u00e1s del 30% de la electricidad mundial.</p><p>Esta transici\u00f3n ha sido impulsada por reducciones dram\u00e1ticas en los costos de fabricaci\u00f3n de paneles solares y avances en la tecnolog\u00eda de turbinas e\u00f3licas.</p><p>Los expertos en energ\u00eda predicen que esta tendencia se acelerar\u00e1, con algunas proyecciones que muestran que las renovables podr\u00edan representar el 50% de la electricidad global para 2035.</p>",
         "image": {
           "uri": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800",
-          "alt": "Paneles solares y turbinas eólicas",
-          "title": "Energía Renovable"
+          "alt": "Paneles solares y turbinas e\u00f3licas",
+          "title": "Energ\u00eda Renovable"
         }
       }
     },
     {
       "id": "news-climate-fr",
       "type": "node.news_article",
+      "langcode": "fr",
+      "translation_of": "news-climate-en",
       "path": "/fr/actualites/energie-renouvelable-jalon",
       "values": {
-        "title": "L'Énergie Renouvelable Atteint un Jalon Historique",
-        "language": ["lang-fr"],
-        "summary": "<p>L'énergie solaire et éolienne représente désormais plus de 30% de la production mondiale d'électricité, marquant une étape significative vers un avenir durable.</p>",
-        "body": "<p>Dans une réalisation historique pour la lutte mondiale contre le changement climatique, les sources d'énergie renouvelable ont atteint un jalon sans précédent. L'énergie solaire et éolienne combinées génèrent maintenant plus de 30% de l'électricité mondiale.</p><p>Cette transition a été motivée par des réductions dramatiques des coûts de fabrication des panneaux solaires et des avancées dans la technologie des éoliennes.</p><p>Les experts en énergie prédisent que cette tendance va s'accélérer, certaines projections montrant que les énergies renouvelables pourraient représenter 50% de l'électricité mondiale d'ici 2035.</p>",
+        "title": "L'\u00c9nergie Renouvelable Atteint un Jalon Historique",
+        "summary": "<p>L'\u00e9nergie solaire et \u00e9olienne repr\u00e9sente d\u00e9sormais plus de 30% de la production mondiale d'\u00e9lectricit\u00e9, marquant une \u00e9tape significative vers un avenir durable.</p>",
+        "body": "<p>Dans une r\u00e9alisation historique pour la lutte mondiale contre le changement climatique, les sources d'\u00e9nergie renouvelable ont atteint un jalon sans pr\u00e9c\u00e9dent. L'\u00e9nergie solaire et \u00e9olienne combin\u00e9es g\u00e9n\u00e8rent maintenant plus de 30% de l'\u00e9lectricit\u00e9 mondiale.</p><p>Cette transition a \u00e9t\u00e9 motiv\u00e9e par des r\u00e9ductions dramatiques des co\u00fbts de fabrication des panneaux solaires et des avanc\u00e9es dans la technologie des \u00e9oliennes.</p><p>Les experts en \u00e9nergie pr\u00e9disent que cette tendance va s'acc\u00e9l\u00e9rer, certaines projections montrant que les \u00e9nergies renouvelables pourraient repr\u00e9senter 50% de l'\u00e9lectricit\u00e9 mondiale d'ici 2035.</p>",
         "image": {
           "uri": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800",
-          "alt": "Panneaux solaires et éoliennes",
-          "title": "Énergie Renouvelable"
+          "alt": "Panneaux solaires et \u00e9oliennes",
+          "title": "\u00c9nergie Renouvelable"
         }
       }
     },
@@ -168,10 +127,10 @@
     {
       "id": "news-space-en",
       "type": "node.news_article",
+      "langcode": "en",
       "path": "/en/news/mars-mission-breakthrough",
       "values": {
         "title": "Mars Mission Achieves Major Breakthrough",
-        "language": ["lang-en"],
         "summary": "<p>Scientists confirm evidence of ancient water systems on Mars, bringing humanity one step closer to understanding the planet's potential for past life.</p>",
         "body": "<p>Space exploration has reached an exciting new chapter as scientists announce a major breakthrough in Mars research. New data from rover missions has confirmed the existence of extensive ancient water systems on the red planet.</p><p>The discovery suggests that Mars once had conditions suitable for microbial life, with networks of rivers and lakes that existed billions of years ago. This finding has reignited discussions about the possibility of past life on Mars.</p><p>Space agencies are now accelerating plans for human missions to Mars, with the goal of establishing a permanent presence on the planet within the next two decades. The discoveries are also helping scientists better understand Earth's own climate history.</p>",
         "image": {
@@ -184,28 +143,30 @@
     {
       "id": "news-space-es",
       "type": "node.news_article",
+      "langcode": "es",
+      "translation_of": "news-space-en",
       "path": "/es/noticias/mision-marte-avance",
       "values": {
-        "title": "Misión a Marte Logra un Gran Avance",
-        "language": ["lang-es"],
-        "summary": "<p>Los científicos confirman evidencia de antiguos sistemas de agua en Marte, acercando a la humanidad a comprender el potencial del planeta para la vida pasada.</p>",
-        "body": "<p>La exploración espacial ha alcanzado un nuevo capítulo emocionante cuando los científicos anuncian un avance importante en la investigación de Marte. Nuevos datos de misiones de rovers han confirmado la existencia de extensos sistemas de agua antiguos en el planeta rojo.</p><p>El descubrimiento sugiere que Marte una vez tuvo condiciones adecuadas para la vida microbiana, con redes de ríos y lagos que existieron hace miles de millones de años.</p><p>Las agencias espaciales ahora están acelerando los planes para misiones humanas a Marte, con el objetivo de establecer una presencia permanente en el planeta en las próximas dos décadas.</p>",
+        "title": "Misi\u00f3n a Marte Logra un Gran Avance",
+        "summary": "<p>Los cient\u00edficos confirman evidencia de antiguos sistemas de agua en Marte, acercando a la humanidad a comprender el potencial del planeta para la vida pasada.</p>",
+        "body": "<p>La exploraci\u00f3n espacial ha alcanzado un nuevo cap\u00edtulo emocionante cuando los cient\u00edficos anuncian un avance importante en la investigaci\u00f3n de Marte. Nuevos datos de misiones de rovers han confirmado la existencia de extensos sistemas de agua antiguos en el planeta rojo.</p><p>El descubrimiento sugiere que Marte una vez tuvo condiciones adecuadas para la vida microbiana, con redes de r\u00edos y lagos que existieron hace miles de millones de a\u00f1os.</p><p>Las agencias espaciales ahora est\u00e1n acelerando los planes para misiones humanas a Marte, con el objetivo de establecer una presencia permanente en el planeta en las pr\u00f3ximas dos d\u00e9cadas.</p>",
         "image": {
           "uri": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800",
           "alt": "Paisaje de la superficie de Marte",
-          "title": "Exploración de Marte"
+          "title": "Exploraci\u00f3n de Marte"
         }
       }
     },
     {
       "id": "news-space-fr",
       "type": "node.news_article",
+      "langcode": "fr",
+      "translation_of": "news-space-en",
       "path": "/fr/actualites/mission-mars-percee",
       "values": {
-        "title": "La Mission Mars Réalise une Percée Majeure",
-        "language": ["lang-fr"],
-        "summary": "<p>Les scientifiques confirment des preuves d'anciens systèmes d'eau sur Mars, rapprochant l'humanité de la compréhension du potentiel de vie passée sur la planète.</p>",
-        "body": "<p>L'exploration spatiale a atteint un nouveau chapitre passionnant alors que les scientifiques annoncent une percée majeure dans la recherche sur Mars. De nouvelles données des missions de rovers ont confirmé l'existence de vastes systèmes d'eau anciens sur la planète rouge.</p><p>La découverte suggère que Mars avait autrefois des conditions propices à la vie microbienne, avec des réseaux de rivières et de lacs qui existaient il y a des milliards d'années.</p><p>Les agences spatiales accélèrent maintenant les plans pour des missions humaines vers Mars, avec l'objectif d'établir une présence permanente sur la planète dans les deux prochaines décennies.</p>",
+        "title": "La Mission Mars R\u00e9alise une Perc\u00e9e Majeure",
+        "summary": "<p>Les scientifiques confirment des preuves d'anciens syst\u00e8mes d'eau sur Mars, rapprochant l'humanit\u00e9 de la compr\u00e9hension du potentiel de vie pass\u00e9e sur la plan\u00e8te.</p>",
+        "body": "<p>L'exploration spatiale a atteint un nouveau chapitre passionnant alors que les scientifiques annoncent une perc\u00e9e majeure dans la recherche sur Mars. De nouvelles donn\u00e9es des missions de rovers ont confirm\u00e9 l'existence de vastes syst\u00e8mes d'eau anciens sur la plan\u00e8te rouge.</p><p>La d\u00e9couverte sugg\u00e8re que Mars avait autrefois des conditions propices \u00e0 la vie microbienne, avec des r\u00e9seaux de rivi\u00e8res et de lacs qui existaient il y a des milliards d'ann\u00e9es.</p><p>Les agences spatiales acc\u00e9l\u00e8rent maintenant les plans pour des missions humaines vers Mars, avec l'objectif d'\u00e9tablir une pr\u00e9sence permanente sur la plan\u00e8te dans les deux prochaines d\u00e9cennies.</p>",
         "image": {
           "uri": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800",
           "alt": "Paysage de la surface de Mars",
