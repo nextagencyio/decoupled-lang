@@ -173,6 +173,159 @@
           "title": "Exploration de Mars"
         }
       }
+    },
+
+    {
+      "id": "news-education-en",
+      "type": "node.news_article",
+      "langcode": "en",
+      "path": "/en/news/online-learning-revolution",
+      "values": {
+        "title": "Online Learning Revolution Reshapes Education",
+        "summary": "<p>Digital platforms are transforming how students learn, making quality education accessible to millions who previously had limited opportunities.</p>",
+        "body": "<p>The education sector is undergoing a fundamental transformation as online learning platforms continue to evolve and improve. What began as a necessity during global disruptions has become a preferred method of education for millions worldwide.</p><p>Universities and educational institutions are now offering complete degree programs online, with interactive features that rival traditional classroom experiences. Virtual labs, AI tutors, and collaborative tools are making remote learning more engaging than ever.</p><p>This shift is particularly impactful in developing regions, where students can now access world-class education from top institutions without the need to relocate. The democratization of education is creating new opportunities for learners of all backgrounds.</p>",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800",
+          "alt": "Student learning online",
+          "title": "Online Education"
+        }
+      }
+    },
+    {
+      "id": "news-education-es",
+      "type": "node.news_article",
+      "langcode": "es",
+      "translation_of": "news-education-en",
+      "path": "/es/noticias/revolucion-aprendizaje-linea",
+      "values": {
+        "title": "La Revolución del Aprendizaje en Línea Transforma la Educación",
+        "summary": "<p>Las plataformas digitales están transformando la forma en que los estudiantes aprenden, haciendo que la educación de calidad sea accesible para millones.</p>",
+        "body": "<p>El sector educativo está experimentando una transformación fundamental a medida que las plataformas de aprendizaje en línea continúan evolucionando y mejorando. Lo que comenzó como una necesidad durante las interrupciones globales se ha convertido en un método preferido de educación.</p><p>Las universidades e instituciones educativas ahora ofrecen programas de grado completos en línea, con características interactivas que rivalizan con las experiencias tradicionales del aula.</p><p>Este cambio es particularmente impactante en las regiones en desarrollo, donde los estudiantes ahora pueden acceder a educación de clase mundial desde las mejores instituciones sin necesidad de reubicarse.</p>",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800",
+          "alt": "Estudiante aprendiendo en línea",
+          "title": "Educación en Línea"
+        }
+      }
+    },
+    {
+      "id": "news-education-fr",
+      "type": "node.news_article",
+      "langcode": "fr",
+      "translation_of": "news-education-en",
+      "path": "/fr/actualites/revolution-apprentissage-ligne",
+      "values": {
+        "title": "La Révolution de l'Apprentissage en Ligne Transforme l'Éducation",
+        "summary": "<p>Les plateformes numériques transforment la façon dont les étudiants apprennent, rendant une éducation de qualité accessible à des millions de personnes.</p>",
+        "body": "<p>Le secteur de l'éducation connaît une transformation fondamentale alors que les plateformes d'apprentissage en ligne continuent d'évoluer et de s'améliorer. Ce qui a commencé comme une nécessité pendant les perturbations mondiales est devenu une méthode d'éducation préférée.</p><p>Les universités et les établissements d'enseignement proposent désormais des programmes diplômants complets en ligne, avec des fonctionnalités interactives qui rivalisent avec les expériences de classe traditionnelles.</p><p>Ce changement est particulièrement impactant dans les régions en développement, où les étudiants peuvent désormais accéder à une éducation de classe mondiale sans avoir besoin de déménager.</p>",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800",
+          "alt": "Étudiant apprenant en ligne",
+          "title": "Éducation en Ligne"
+        }
+      }
+    },
+
+    {
+      "id": "news-startup-en",
+      "type": "node.news_article",
+      "langcode": "en",
+      "path": "/en/news/startup-ecosystem-thrives",
+      "values": {
+        "title": "Global Startup Ecosystem Thrives Despite Challenges",
+        "summary": "<p>Entrepreneurs worldwide are launching innovative ventures at record rates, with emerging markets becoming new hubs for technological innovation.</p>",
+        "body": "<p>The global startup ecosystem has shown remarkable resilience, with entrepreneurs continuing to launch innovative ventures despite economic uncertainties. New data shows that startup formation rates have reached historic highs in many regions.</p><p>Emerging markets are particularly noteworthy, with cities in Asia, Africa, and Latin America becoming vibrant tech hubs. These regions are producing solutions tailored to local needs while also scaling globally.</p><p>Venture capital investment patterns are also shifting, with investors increasingly looking beyond traditional tech centers. This diversification is bringing fresh perspectives and innovative solutions to global challenges in healthcare, climate, and finance.</p>",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800",
+          "alt": "Startup team working together",
+          "title": "Startup Innovation"
+        }
+      }
+    },
+    {
+      "id": "news-startup-es",
+      "type": "node.news_article",
+      "langcode": "es",
+      "translation_of": "news-startup-en",
+      "path": "/es/noticias/ecosistema-startups-prospera",
+      "values": {
+        "title": "El Ecosistema Global de Startups Prospera a Pesar de los Desafíos",
+        "summary": "<p>Los emprendedores de todo el mundo están lanzando empresas innovadoras a tasas récord, con los mercados emergentes convirtiéndose en nuevos centros de innovación.</p>",
+        "body": "<p>El ecosistema global de startups ha mostrado una resiliencia notable, con emprendedores que continúan lanzando empresas innovadoras a pesar de las incertidumbres económicas. Nuevos datos muestran que las tasas de formación de startups han alcanzado máximos históricos.</p><p>Los mercados emergentes son particularmente notables, con ciudades en Asia, África y América Latina convirtiéndose en vibrantes centros tecnológicos. Estas regiones están produciendo soluciones adaptadas a las necesidades locales.</p><p>Los patrones de inversión de capital de riesgo también están cambiando, con inversores mirando cada vez más allá de los centros tecnológicos tradicionales.</p>",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800",
+          "alt": "Equipo de startup trabajando juntos",
+          "title": "Innovación de Startups"
+        }
+      }
+    },
+    {
+      "id": "news-startup-fr",
+      "type": "node.news_article",
+      "langcode": "fr",
+      "translation_of": "news-startup-en",
+      "path": "/fr/actualites/ecosysteme-startups-prospere",
+      "values": {
+        "title": "L'Écosystème Mondial des Startups Prospère Malgré les Défis",
+        "summary": "<p>Les entrepreneurs du monde entier lancent des entreprises innovantes à des taux records, les marchés émergents devenant de nouveaux pôles d'innovation.</p>",
+        "body": "<p>L'écosystème mondial des startups a fait preuve d'une résilience remarquable, les entrepreneurs continuant à lancer des entreprises innovantes malgré les incertitudes économiques. De nouvelles données montrent que les taux de création de startups ont atteint des sommets historiques.</p><p>Les marchés émergents sont particulièrement remarquables, avec des villes en Asie, en Afrique et en Amérique latine devenant des pôles technologiques dynamiques.</p><p>Les modèles d'investissement en capital-risque évoluent également, les investisseurs regardant de plus en plus au-delà des centres technologiques traditionnels.</p>",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800",
+          "alt": "Équipe de startup travaillant ensemble",
+          "title": "Innovation des Startups"
+        }
+      }
+    },
+
+    {
+      "id": "news-ocean-en",
+      "type": "node.news_article",
+      "langcode": "en",
+      "path": "/en/news/ocean-exploration-discoveries",
+      "values": {
+        "title": "Ocean Exploration Reveals Stunning New Discoveries",
+        "summary": "<p>Deep-sea expeditions are uncovering new species and ecosystems, highlighting how much of our planet's oceans remain unexplored and full of wonder.</p>",
+        "body": "<p>Marine scientists are making remarkable discoveries in the depths of our oceans, revealing ecosystems and species that were previously unknown to science. Recent expeditions have documented hundreds of new species in just the past year.</p><p>Advanced submersible technology and improved deep-sea cameras are enabling researchers to explore areas that were once inaccessible. These explorations are revealing complex ecosystems thriving in extreme conditions, from hydrothermal vents to deep-sea trenches.</p><p>The discoveries have important implications for understanding climate change, developing new medicines, and protecting marine biodiversity. Scientists estimate that over 80% of the ocean remains unexplored, promising many more discoveries to come.</p>",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=800",
+          "alt": "Deep ocean underwater scene",
+          "title": "Ocean Exploration"
+        }
+      }
+    },
+    {
+      "id": "news-ocean-es",
+      "type": "node.news_article",
+      "langcode": "es",
+      "translation_of": "news-ocean-en",
+      "path": "/es/noticias/exploracion-oceano-descubrimientos",
+      "values": {
+        "title": "La Exploración Oceánica Revela Nuevos Descubrimientos Asombrosos",
+        "summary": "<p>Las expediciones a las profundidades marinas están descubriendo nuevas especies y ecosistemas, destacando cuánto de los océanos de nuestro planeta permanece sin explorar.</p>",
+        "body": "<p>Los científicos marinos están haciendo descubrimientos notables en las profundidades de nuestros océanos, revelando ecosistemas y especies que antes eran desconocidos para la ciencia. Las expediciones recientes han documentado cientos de nuevas especies solo en el último año.</p><p>La tecnología avanzada de sumergibles y las cámaras de aguas profundas mejoradas están permitiendo a los investigadores explorar áreas que antes eran inaccesibles.</p><p>Los descubrimientos tienen implicaciones importantes para comprender el cambio climático, desarrollar nuevos medicamentos y proteger la biodiversidad marina.</p>",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=800",
+          "alt": "Escena submarina del océano profundo",
+          "title": "Exploración Oceánica"
+        }
+      }
+    },
+    {
+      "id": "news-ocean-fr",
+      "type": "node.news_article",
+      "langcode": "fr",
+      "translation_of": "news-ocean-en",
+      "path": "/fr/actualites/exploration-ocean-decouvertes",
+      "values": {
+        "title": "L'Exploration Océanique Révèle de Nouvelles Découvertes Étonnantes",
+        "summary": "<p>Les expéditions en eaux profondes découvrent de nouvelles espèces et écosystèmes, soulignant à quel point nos océans restent inexplorés et pleins de merveilles.</p>",
+        "body": "<p>Les scientifiques marins font des découvertes remarquables dans les profondeurs de nos océans, révélant des écosystèmes et des espèces jusqu'alors inconnus de la science. Les expéditions récentes ont documenté des centaines de nouvelles espèces rien que l'année dernière.</p><p>La technologie avancée des submersibles et les caméras sous-marines améliorées permettent aux chercheurs d'explorer des zones auparavant inaccessibles.</p><p>Les découvertes ont des implications importantes pour la compréhension du changement climatique, le développement de nouveaux médicaments et la protection de la biodiversité marine.</p>",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=800",
+          "alt": "Scène sous-marine de l'océan profond",
+          "title": "Exploration Océanique"
+        }
+      }
     }
   ]
 }
