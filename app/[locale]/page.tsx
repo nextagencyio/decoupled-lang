@@ -51,13 +51,10 @@ export default async function HomePage({ params }: PageProps) {
       variables: { first: 20 },
     })
 
-    // Filter articles by language
-    const languageName = languages[validLocale].nativeName
+    // Filter articles by URL path prefix (e.g., /en/, /es/, /fr/)
     articles = (data?.nodeNewsArticles?.nodes || []).filter((article) => {
-      if (!article.language || article.language.length === 0) return false
-      return article.language.some(
-        (lang) => lang.name === languageName || lang.code === validLocale
-      )
+      if (!article.path) return false
+      return article.path.startsWith(`/${validLocale}/`)
     })
   } catch (e) {
     console.error('Error fetching news:', e)

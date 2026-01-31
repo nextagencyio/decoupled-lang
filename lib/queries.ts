@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client'
 
-// Get news articles filtered by language
+// Get news articles - filtered by URL path on the frontend
 export const GET_NEWS_BY_LANGUAGE = gql`
   query GetNewsByLanguage($first: Int = 10) {
     nodeNewsArticles(first: $first, sortKey: CREATED_AT) {
@@ -31,13 +31,6 @@ export const GET_NEWS_BY_LANGUAGE = gql`
               url
               width
               height
-            }
-          }
-          language {
-            ... on TermLanguage {
-              id
-              name
-              code
             }
           }
         }

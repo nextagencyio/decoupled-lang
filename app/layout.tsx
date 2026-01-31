@@ -47,8 +47,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html>
-      <body className="font-sans">
+    <html lang="en" suppressHydrationWarning>
+      <body className="font-sans bg-gray-50 min-h-screen">
         <ApolloProvider>
           {children}
         </ApolloProvider>

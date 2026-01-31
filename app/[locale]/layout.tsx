@@ -18,11 +18,5 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
     notFound()
   }
 
-  return (
-    <html lang={locale}>
-      <body className="font-sans bg-gray-50 min-h-screen">
-        {children}
-      </body>
-    </html>
-  )
+  return <>{children}</>
 }

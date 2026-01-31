@@ -10,7 +10,9 @@ interface NewsCardProps {
 }
 
 export default function NewsCard({ article, locale }: NewsCardProps) {
-  const imageUrl = article.image?.variations?.[0]?.url || article.image?.url
+  // Use base image URL (not variations which may have Drupal style issues) and ensure HTTPS
+  const rawImageUrl = article.image?.url
+  const imageUrl = rawImageUrl?.replace(/^http:/, 'https:')
   const summary = article.summary?.processed || ''
   // Strip HTML tags for display
   const cleanSummary = summary.replace(/<[^>]*>/g, '')
