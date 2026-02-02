@@ -8,7 +8,7 @@ export interface DrupalNode {
   created: {
     timestamp: number
   }
-  changed: {
+  changed?: {
     timestamp: number
   }
 }
@@ -18,6 +18,12 @@ export interface Translation {
   langcode: {
     id: string
   }
+}
+
+export interface LanguageTerm {
+  id: string
+  name: string
+  code: string
 }
 
 export interface DrupalNewsArticle extends DrupalNode {
@@ -39,6 +45,7 @@ export interface DrupalNewsArticle extends DrupalNode {
       height: number
     }>
   }
+  language?: LanguageTerm[]
   translations?: Translation[]
 }
 
