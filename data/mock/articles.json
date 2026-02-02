@@ -1,0 +1,178 @@
+{
+  "articles": [
+    {
+      "__typename": "NodeNewsArticle",
+      "id": "en-1",
+      "title": "Tech Giants Report Record Revenue",
+      "path": "/en/tech-giants-record-revenue",
+      "created": {
+        "timestamp": 1738454400
+      },
+      "body": {
+        "__typename": "Text",
+        "processed": "<p>Major technology companies have reported unprecedented quarterly earnings, driven by strong demand for AI services and cloud computing. Industry analysts predict continued growth as businesses accelerate their digital transformation initiatives.</p><p>The surge in revenue reflects a broader trend of technology adoption across all sectors of the economy.</p>"
+      },
+      "summary": {
+        "__typename": "Text",
+        "processed": "Major technology companies report record quarterly earnings driven by AI and cloud services."
+      },
+      "image": {
+        "__typename": "Image",
+        "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+        "alt": "Tech industry growth"
+      },
+      "language": [
+        {
+          "id": "lang-en",
+          "name": "English",
+          "code": "en"
+        }
+      ]
+    },
+    {
+      "__typename": "NodeNewsArticle",
+      "id": "en-2",
+      "title": "Global Climate Summit Reaches Historic Agreement",
+      "path": "/en/climate-summit-agreement",
+      "created": {
+        "timestamp": 1738368000
+      },
+      "body": {
+        "__typename": "Text",
+        "processed": "<p>World leaders have announced a landmark climate accord aimed at reducing carbon emissions by 50% by 2035. The agreement includes provisions for sustainable energy investment and support for developing nations.</p><p>Environmental groups have praised the ambitious targets while calling for immediate implementation.</p>"
+      },
+      "summary": {
+        "__typename": "Text",
+        "processed": "World leaders announce landmark accord to reduce carbon emissions by 50% by 2035."
+      },
+      "image": {
+        "__typename": "Image",
+        "url": "https://images.unsplash.com/photo-1569163139599-0f4517e36f51?w=800&q=80",
+        "alt": "Climate summit"
+      },
+      "language": [
+        {
+          "id": "lang-en",
+          "name": "English",
+          "code": "en"
+        }
+      ]
+    },
+    {
+      "__typename": "NodeNewsArticle",
+      "id": "es-1",
+      "title": "Gigantes Tecnológicos Reportan Ingresos Récord",
+      "path": "/es/gigantes-tecnologicos-ingresos-record",
+      "created": {
+        "timestamp": 1738454400
+      },
+      "body": {
+        "__typename": "Text",
+        "processed": "<p>Las principales empresas tecnológicas han reportado ganancias trimestrales sin precedentes, impulsadas por la fuerte demanda de servicios de IA y computación en la nube. Los analistas de la industria predicen un crecimiento continuo.</p><p>El aumento de los ingresos refleja una tendencia más amplia de adopción tecnológica en todos los sectores de la economía.</p>"
+      },
+      "summary": {
+        "__typename": "Text",
+        "processed": "Las principales empresas tecnológicas reportan ganancias récord impulsadas por IA y servicios en la nube."
+      },
+      "image": {
+        "__typename": "Image",
+        "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+        "alt": "Crecimiento de la industria tecnológica"
+      },
+      "language": [
+        {
+          "id": "lang-es",
+          "name": "Español",
+          "code": "es"
+        }
+      ]
+    },
+    {
+      "__typename": "NodeNewsArticle",
+      "id": "es-2",
+      "title": "Cumbre Climática Global Alcanza Acuerdo Histórico",
+      "path": "/es/cumbre-climatica-acuerdo",
+      "created": {
+        "timestamp": 1738368000
+      },
+      "body": {
+        "__typename": "Text",
+        "processed": "<p>Los líderes mundiales han anunciado un acuerdo climático histórico destinado a reducir las emisiones de carbono en un 50% para 2035. El acuerdo incluye disposiciones para la inversión en energía sostenible.</p><p>Los grupos ambientales han elogiado los objetivos ambiciosos mientras piden una implementación inmediata.</p>"
+      },
+      "summary": {
+        "__typename": "Text",
+        "processed": "Líderes mundiales anuncian acuerdo histórico para reducir emisiones de carbono en 50% para 2035."
+      },
+      "image": {
+        "__typename": "Image",
+        "url": "https://images.unsplash.com/photo-1569163139599-0f4517e36f51?w=800&q=80",
+        "alt": "Cumbre climática"
+      },
+      "language": [
+        {
+          "id": "lang-es",
+          "name": "Español",
+          "code": "es"
+        }
+      ]
+    },
+    {
+      "__typename": "NodeNewsArticle",
+      "id": "fr-1",
+      "title": "Les Géants de la Tech Enregistrent des Revenus Records",
+      "path": "/fr/geants-tech-revenus-records",
+      "created": {
+        "timestamp": 1738454400
+      },
+      "body": {
+        "__typename": "Text",
+        "processed": "<p>Les grandes entreprises technologiques ont annoncé des bénéfices trimestriels sans précédent, portés par la forte demande de services d'IA et de cloud computing. Les analystes prévoient une croissance continue.</p><p>L'augmentation des revenus reflète une tendance plus large d'adoption technologique dans tous les secteurs de l'économie.</p>"
+      },
+      "summary": {
+        "__typename": "Text",
+        "processed": "Les grandes entreprises tech annoncent des bénéfices records portés par l'IA et les services cloud."
+      },
+      "image": {
+        "__typename": "Image",
+        "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+        "alt": "Croissance de l'industrie tech"
+      },
+      "language": [
+        {
+          "id": "lang-fr",
+          "name": "Français",
+          "code": "fr"
+        }
+      ]
+    },
+    {
+      "__typename": "NodeNewsArticle",
+      "id": "fr-2",
+      "title": "Le Sommet Mondial sur le Climat Aboutit à un Accord Historique",
+      "path": "/fr/sommet-climatique-accord",
+      "created": {
+        "timestamp": 1738368000
+      },
+      "body": {
+        "__typename": "Text",
+        "processed": "<p>Les dirigeants mondiaux ont annoncé un accord climatique historique visant à réduire les émissions de carbone de 50% d'ici 2035. L'accord comprend des dispositions pour l'investissement dans l'énergie durable.</p><p>Les groupes environnementaux ont salué les objectifs ambitieux tout en appelant à une mise en œuvre immédiate.</p>"
+      },
+      "summary": {
+        "__typename": "Text",
+        "processed": "Les dirigeants mondiaux annoncent un accord historique pour réduire les émissions de carbone de 50% d'ici 2035."
+      },
+      "image": {
+        "__typename": "Image",
+        "url": "https://images.unsplash.com/photo-1569163139599-0f4517e36f51?w=800&q=80",
+        "alt": "Sommet climatique"
+      },
+      "language": [
+        {
+          "id": "lang-fr",
+          "name": "Français",
+          "code": "fr"
+        }
+      ]
+    }
+  ]
+}

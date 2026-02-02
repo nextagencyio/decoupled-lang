@@ -213,6 +213,40 @@ Next.js App Router uses the `[locale]` dynamic segment:
 
 The root `/` redirects to `/en` (default locale).
 
+## Demo Mode
+
+Demo mode allows you to showcase the multilingual application without connecting to a Drupal backend. It displays sample news articles in all 3 languages.
+
+### Enable Demo Mode
+
+Set the environment variable:
+
+```bash
+NEXT_PUBLIC_DEMO_MODE=true
+```
+
+Or add to `.env.local`:
+```
+NEXT_PUBLIC_DEMO_MODE=true
+```
+
+### What Demo Mode Does
+
+- Shows a "Demo Mode" banner at the top of the page
+- Returns mock news articles in English, Spanish, and French
+- Language switching works with sample content
+- No Drupal backend required
+
+### Removing Demo Mode
+
+To convert to a production app with real data:
+
+1. Delete `lib/demo-mode.ts`
+2. Delete `data/mock/` directory
+3. Delete `app/[locale]/components/DemoModeBanner.tsx`
+4. Remove `DemoModeBanner` import and usage from `app/layout.tsx`
+5. Remove demo mode checks from `app/[locale]/page.tsx`
+
 ## Deployment
 
 ### Vercel
@@ -221,6 +255,8 @@ The root `/` redirects to `/en` (default locale).
 2. Import project in Vercel
 3. Add environment variables
 4. Deploy
+
+Set `NEXT_PUBLIC_DEMO_MODE=true` in Vercel environment variables for a demo deployment.
 
 ### Environment Variables
 

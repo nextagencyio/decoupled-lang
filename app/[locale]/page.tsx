@@ -4,6 +4,7 @@ import { GET_NEWS_BY_LANGUAGE } from '@/lib/queries'
 import { NewsArticleData, DrupalNewsArticle, Locale, locales } from '@/lib/types'
 import { t, languages } from '@/lib/i18n'
 import { checkConfiguration } from '@/lib/config-check'
+import { isDemoMode, getMockArticles } from '@/lib/demo-mode'
 import Header from './components/Header'
 import NewsCard from './components/NewsCard'
 import SetupGuide from './components/SetupGuide'
@@ -32,30 +33,35 @@ export default async function HomePage({ params }: PageProps) {
   const { locale } = await params
   const validLocale = locales.includes(locale as Locale) ? (locale as Locale) : 'en'
 
-  // Check configuration
-  const config = checkConfiguration()
-  if (!config.isConfigured) {
-    return <SetupGuide missingVars={config.missingVars} locale={validLocale} />
-  }
-
-  // Fetch news articles
-  const requestHeaders = await headers()
-  const client = getServerApolloClient(requestHeaders)
-
   let articles: DrupalNewsArticle[] = []
   let error: string | null = null
 
-  try {
-    const { data } = await client.query<NewsArticleData>({
-      query: GET_NEWS_BY_LANGUAGE,
-      variables: { first: 20, langcode: validLocale },
-    })
+  // Demo mode: return mock articles
+  if (isDemoMode()) {
+    articles = getMockArticles(validLocale)
+  } else {
+    // Check configuration
+    const config = checkConfiguration()
+    if (!config.isConfigured) {
+      return <SetupGuide missingVars={config.missingVars} locale={validLocale} />
+    }
 
-    // Articles are already filtered by langcode in the query
-    articles = data?.nodeNewsArticles?.nodes || []
-  } catch (e) {
-    console.error('Error fetching news:', e)
-    error = e instanceof Error ? e.message : 'Failed to fetch news'
+    // Fetch news articles
+    const requestHeaders = await headers()
+    const client = getServerApolloClient(requestHeaders)
+
+    try {
+      const { data } = await client.query<NewsArticleData>({
+        query: GET_NEWS_BY_LANGUAGE,
+        variables: { first: 20, langcode: validLocale },
+      })
+
+      // Articles are already filtered by langcode in the query
+      articles = data?.nodeNewsArticles?.nodes || []
+    } catch (e) {
+      console.error('Error fetching news:', e)
+      error = e instanceof Error ? e.message : 'Failed to fetch news'
+    }
   }
 
   return (

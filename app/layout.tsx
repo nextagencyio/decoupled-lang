@@ -1,6 +1,8 @@
 import './globals.css'
 import ApolloProvider from './components/providers/ApolloProvider'
 import { Viewport, type Metadata } from 'next'
+// DEMO MODE: Remove this import and <DemoModeBanner /> below for production-only builds
+import { DemoModeBanner } from './[locale]/components/DemoModeBanner'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -49,6 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="font-sans bg-gray-50 min-h-screen">
+        <DemoModeBanner />
         <ApolloProvider>
           {children}
         </ApolloProvider>
