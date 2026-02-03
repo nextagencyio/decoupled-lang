@@ -7,6 +7,7 @@ import { GET_NEWS_BY_PATH } from '@/lib/queries'
 import { Locale, locales } from '@/lib/types'
 import { t, formatDate } from '@/lib/i18n'
 import { checkConfiguration } from '@/lib/config-check'
+import { isDemoMode, getMockArticleByPath } from '@/lib/demo-mode'
 import Header from '../components/Header'
 import SetupGuide from '../components/SetupGuide'
 import { Calendar, ArrowLeft } from 'lucide-react'
@@ -22,7 +23,19 @@ export async function generateMetadata({ params }: PageProps) {
   const validLocale = locales.includes(locale as Locale) ? (locale as Locale) : 'en'
   const path = `/${locale}/${slug.join('/')}`
 
-  // Fetch article for metadata
+  // DEMO MODE: Return metadata from mock article
+  if (isDemoMode()) {
+    const article = getMockArticleByPath(path)
+    if (article) {
+      return {
+        title: article.title,
+        description: article.summary?.processed?.replace(/<[^>]*>/g, '').slice(0, 160),
+      }
+    }
+    return { title: t(validLocale, 'latestNews') }
+  }
+
+  // Check configuration for non-demo mode
   const config = checkConfiguration()
   if (!config.isConfigured) {
     return { title: 'Setup Required' }
@@ -57,29 +70,38 @@ export default async function ArticlePage({ params }: PageProps) {
   const validLocale = locales.includes(locale as Locale) ? (locale as Locale) : 'en'
   const path = `/${locale}/${slug.join('/')}`
 
-  // Check configuration
-  const config = checkConfiguration()
-  if (!config.isConfigured) {
-    return <SetupGuide missingVars={config.missingVars} locale={validLocale} />
-  }
-
-  // Fetch article by path
-  const requestHeaders = await headers()
-  const client = getServerApolloClient(requestHeaders)
-
   let article = null
-  try {
-    const { data } = await client.query({
-      query: GET_NEWS_BY_PATH,
-      variables: { path },
-    })
-    article = data?.route?.entity
-  } catch (e) {
-    console.error('Error fetching article:', e)
-  }
 
-  if (!article) {
-    notFound()
+  // DEMO MODE: Return mock article
+  if (isDemoMode()) {
+    article = getMockArticleByPath(path)
+    if (!article) {
+      notFound()
+    }
+  } else {
+    // Check configuration for non-demo mode
+    const config = checkConfiguration()
+    if (!config.isConfigured) {
+      return <SetupGuide missingVars={config.missingVars} locale={validLocale} />
+    }
+
+    // Fetch article by path from Drupal
+    const requestHeaders = await headers()
+    const client = getServerApolloClient(requestHeaders)
+
+    try {
+      const { data } = await client.query({
+        query: GET_NEWS_BY_PATH,
+        variables: { path },
+      })
+      article = data?.route?.entity
+    } catch (e) {
+      console.error('Error fetching article:', e)
+    }
+
+    if (!article) {
+      notFound()
+    }
   }
 
   // Image URL with HTTPS
