@@ -2,177 +2,381 @@
   "articles": [
     {
       "__typename": "NodeNewsArticle",
-      "id": "en-1",
-      "title": "Tech Giants Report Record Revenue",
-      "path": "/en/tech-giants-record-revenue",
-      "created": {
-        "timestamp": 1738454400
-      },
+      "id": "news-tech-en",
+      "title": "AI Transforms Healthcare Industry",
+      "path": "/en/ai-transforms-healthcare",
+      "created": { "timestamp": 1738454400 },
       "body": {
         "__typename": "Text",
-        "processed": "<p>Major technology companies have reported unprecedented quarterly earnings, driven by strong demand for AI services and cloud computing. Industry analysts predict continued growth as businesses accelerate their digital transformation initiatives.</p><p>The surge in revenue reflects a broader trend of technology adoption across all sectors of the economy.</p>"
+        "processed": "<p>The healthcare industry is experiencing a dramatic transformation thanks to artificial intelligence. Machine learning algorithms are now capable of analyzing medical images with unprecedented accuracy, often detecting early signs of diseases that human doctors might miss.</p><p>Hospitals around the world are implementing AI-powered diagnostic tools that can process thousands of X-rays, MRIs, and CT scans in minutes. This technology is particularly impactful in regions with limited access to specialist physicians.</p><p>Beyond diagnostics, AI is also being used to predict patient outcomes, optimize treatment plans, and accelerate drug discovery. The integration of these technologies promises to make healthcare more accessible and affordable for everyone.</p>"
       },
       "summary": {
         "__typename": "Text",
-        "processed": "Major technology companies report record quarterly earnings driven by AI and cloud services."
+        "processed": "Artificial intelligence is revolutionizing how doctors diagnose diseases and develop treatment plans, leading to faster and more accurate patient care."
       },
       "image": {
         "__typename": "Image",
-        "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-        "alt": "Tech industry growth"
+        "url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+        "alt": "Doctor using AI technology"
       },
-      "language": [
-        {
-          "id": "lang-en",
-          "name": "English",
-          "code": "en"
-        }
-      ]
+      "language": [{ "id": "lang-en", "name": "English", "code": "en" }]
     },
     {
       "__typename": "NodeNewsArticle",
-      "id": "en-2",
-      "title": "Global Climate Summit Reaches Historic Agreement",
-      "path": "/en/climate-summit-agreement",
-      "created": {
-        "timestamp": 1738368000
-      },
+      "id": "news-tech-es",
+      "title": "La IA Transforma la Industria de la Salud",
+      "path": "/es/ia-transforma-salud",
+      "created": { "timestamp": 1738454400 },
       "body": {
         "__typename": "Text",
-        "processed": "<p>World leaders have announced a landmark climate accord aimed at reducing carbon emissions by 50% by 2035. The agreement includes provisions for sustainable energy investment and support for developing nations.</p><p>Environmental groups have praised the ambitious targets while calling for immediate implementation.</p>"
+        "processed": "<p>La industria de la salud está experimentando una transformación dramática gracias a la inteligencia artificial. Los algoritmos de aprendizaje automático ahora son capaces de analizar imágenes médicas con una precisión sin precedentes.</p><p>Los hospitales de todo el mundo están implementando herramientas de diagnóstico impulsadas por IA que pueden procesar miles de radiografías, resonancias magnéticas y tomografías en minutos.</p><p>Más allá del diagnóstico, la IA también se utiliza para predecir resultados de pacientes, optimizar planes de tratamiento y acelerar el descubrimiento de medicamentos.</p>"
       },
       "summary": {
         "__typename": "Text",
-        "processed": "World leaders announce landmark accord to reduce carbon emissions by 50% by 2035."
+        "processed": "La inteligencia artificial está revolucionando la forma en que los médicos diagnostican enfermedades y desarrollan planes de tratamiento."
       },
       "image": {
         "__typename": "Image",
-        "url": "https://images.unsplash.com/photo-1569163139599-0f4517e36f51?w=800&q=80",
-        "alt": "Climate summit"
+        "url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+        "alt": "Médico usando tecnología IA"
       },
-      "language": [
-        {
-          "id": "lang-en",
-          "name": "English",
-          "code": "en"
-        }
-      ]
+      "language": [{ "id": "lang-es", "name": "Español", "code": "es" }]
     },
     {
       "__typename": "NodeNewsArticle",
-      "id": "es-1",
-      "title": "Gigantes Tecnológicos Reportan Ingresos Récord",
-      "path": "/es/gigantes-tecnologicos-ingresos-record",
-      "created": {
-        "timestamp": 1738454400
-      },
+      "id": "news-tech-fr",
+      "title": "L'IA Transforme l'Industrie de la Santé",
+      "path": "/fr/ia-transforme-sante",
+      "created": { "timestamp": 1738454400 },
       "body": {
         "__typename": "Text",
-        "processed": "<p>Las principales empresas tecnológicas han reportado ganancias trimestrales sin precedentes, impulsadas por la fuerte demanda de servicios de IA y computación en la nube. Los analistas de la industria predicen un crecimiento continuo.</p><p>El aumento de los ingresos refleja una tendencia más amplia de adopción tecnológica en todos los sectores de la economía.</p>"
+        "processed": "<p>L'industrie de la santé connaît une transformation spectaculaire grâce à l'intelligence artificielle. Les algorithmes d'apprentissage automatique sont désormais capables d'analyser des images médicales avec une précision sans précédent.</p><p>Les hôpitaux du monde entier mettent en place des outils de diagnostic alimentés par l'IA qui peuvent traiter des milliers de radiographies, d'IRM et de scanners en quelques minutes.</p><p>Au-delà du diagnostic, l'IA est également utilisée pour prédire les résultats des patients, optimiser les plans de traitement et accélérer la découverte de médicaments.</p>"
       },
       "summary": {
         "__typename": "Text",
-        "processed": "Las principales empresas tecnológicas reportan ganancias récord impulsadas por IA y servicios en la nube."
+        "processed": "L'intelligence artificielle révolutionne la façon dont les médecins diagnostiquent les maladies et élaborent des plans de traitement."
       },
       "image": {
         "__typename": "Image",
-        "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-        "alt": "Crecimiento de la industria tecnológica"
+        "url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+        "alt": "Médecin utilisant la technologie IA"
       },
-      "language": [
-        {
-          "id": "lang-es",
-          "name": "Español",
-          "code": "es"
-        }
-      ]
+      "language": [{ "id": "lang-fr", "name": "Français", "code": "fr" }]
     },
     {
       "__typename": "NodeNewsArticle",
-      "id": "es-2",
-      "title": "Cumbre Climática Global Alcanza Acuerdo Histórico",
-      "path": "/es/cumbre-climatica-acuerdo",
-      "created": {
-        "timestamp": 1738368000
-      },
+      "id": "news-climate-en",
+      "title": "Renewable Energy Reaches Historic Milestone",
+      "path": "/en/renewable-energy-milestone",
+      "created": { "timestamp": 1738368000 },
       "body": {
         "__typename": "Text",
-        "processed": "<p>Los líderes mundiales han anunciado un acuerdo climático histórico destinado a reducir las emisiones de carbono en un 50% para 2035. El acuerdo incluye disposiciones para la inversión en energía sostenible.</p><p>Los grupos ambientales han elogiado los objetivos ambiciosos mientras piden una implementación inmediata.</p>"
+        "processed": "<p>In a landmark achievement for the global fight against climate change, renewable energy sources have reached an unprecedented milestone. Solar and wind power combined now generate more than 30% of the world's electricity.</p><p>This transition has been driven by dramatic cost reductions in solar panel manufacturing and advances in wind turbine technology. Many countries are now finding that renewable energy is not just cleaner but also more economical than fossil fuels.</p><p>Energy experts predict that this trend will accelerate, with some projections showing renewables could account for 50% of global electricity by 2035. The shift is creating millions of green jobs and reducing carbon emissions worldwide.</p>"
       },
       "summary": {
         "__typename": "Text",
-        "processed": "Líderes mundiales anuncian acuerdo histórico para reducir emisiones de carbono en 50% para 2035."
+        "processed": "Solar and wind power now account for over 30% of global electricity generation, marking a significant step toward a sustainable future."
       },
       "image": {
         "__typename": "Image",
-        "url": "https://images.unsplash.com/photo-1569163139599-0f4517e36f51?w=800&q=80",
-        "alt": "Cumbre climática"
+        "url": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80",
+        "alt": "Solar panels and wind turbines"
       },
-      "language": [
-        {
-          "id": "lang-es",
-          "name": "Español",
-          "code": "es"
-        }
-      ]
+      "language": [{ "id": "lang-en", "name": "English", "code": "en" }]
     },
     {
       "__typename": "NodeNewsArticle",
-      "id": "fr-1",
-      "title": "Les Géants de la Tech Enregistrent des Revenus Records",
-      "path": "/fr/geants-tech-revenus-records",
-      "created": {
-        "timestamp": 1738454400
-      },
+      "id": "news-climate-es",
+      "title": "La Energía Renovable Alcanza un Hito Histórico",
+      "path": "/es/energia-renovable-hito",
+      "created": { "timestamp": 1738368000 },
       "body": {
         "__typename": "Text",
-        "processed": "<p>Les grandes entreprises technologiques ont annoncé des bénéfices trimestriels sans précédent, portés par la forte demande de services d'IA et de cloud computing. Les analystes prévoient une croissance continue.</p><p>L'augmentation des revenus reflète une tendance plus large d'adoption technologique dans tous les secteurs de l'économie.</p>"
+        "processed": "<p>En un logro histórico para la lucha global contra el cambio climático, las fuentes de energía renovable han alcanzado un hito sin precedentes. La energía solar y eólica combinadas ahora generan más del 30% de la electricidad mundial.</p><p>Esta transición ha sido impulsada por reducciones dramáticas en los costos de fabricación de paneles solares y avances en la tecnología de turbinas eólicas.</p><p>Los expertos en energía predicen que esta tendencia se acelerará, con algunas proyecciones que muestran que las renovables podrían representar el 50% de la electricidad global para 2035.</p>"
       },
       "summary": {
         "__typename": "Text",
-        "processed": "Les grandes entreprises tech annoncent des bénéfices records portés par l'IA et les services cloud."
+        "processed": "La energía solar y eólica ahora representan más del 30% de la generación eléctrica mundial, marcando un paso significativo hacia un futuro sostenible."
       },
       "image": {
         "__typename": "Image",
-        "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-        "alt": "Croissance de l'industrie tech"
+        "url": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80",
+        "alt": "Paneles solares y turbinas eólicas"
       },
-      "language": [
-        {
-          "id": "lang-fr",
-          "name": "Français",
-          "code": "fr"
-        }
-      ]
+      "language": [{ "id": "lang-es", "name": "Español", "code": "es" }]
     },
     {
       "__typename": "NodeNewsArticle",
-      "id": "fr-2",
-      "title": "Le Sommet Mondial sur le Climat Aboutit à un Accord Historique",
-      "path": "/fr/sommet-climatique-accord",
-      "created": {
-        "timestamp": 1738368000
-      },
+      "id": "news-climate-fr",
+      "title": "L'Énergie Renouvelable Atteint un Jalon Historique",
+      "path": "/fr/energie-renouvelable-jalon",
+      "created": { "timestamp": 1738368000 },
       "body": {
         "__typename": "Text",
-        "processed": "<p>Les dirigeants mondiaux ont annoncé un accord climatique historique visant à réduire les émissions de carbone de 50% d'ici 2035. L'accord comprend des dispositions pour l'investissement dans l'énergie durable.</p><p>Les groupes environnementaux ont salué les objectifs ambitieux tout en appelant à une mise en œuvre immédiate.</p>"
+        "processed": "<p>Dans une réalisation historique pour la lutte mondiale contre le changement climatique, les sources d'énergie renouvelable ont atteint un jalon sans précédent. L'énergie solaire et éolienne combinées génèrent maintenant plus de 30% de l'électricité mondiale.</p><p>Cette transition a été motivée par des réductions dramatiques des coûts de fabrication des panneaux solaires et des avancées dans la technologie des éoliennes.</p><p>Les experts en énergie prédisent que cette tendance va s'accélérer, certaines projections montrant que les énergies renouvelables pourraient représenter 50% de l'électricité mondiale d'ici 2035.</p>"
       },
       "summary": {
         "__typename": "Text",
-        "processed": "Les dirigeants mondiaux annoncent un accord historique pour réduire les émissions de carbone de 50% d'ici 2035."
+        "processed": "L'énergie solaire et éolienne représente désormais plus de 30% de la production mondiale d'électricité, marquant une étape significative vers un avenir durable."
       },
       "image": {
         "__typename": "Image",
-        "url": "https://images.unsplash.com/photo-1569163139599-0f4517e36f51?w=800&q=80",
-        "alt": "Sommet climatique"
+        "url": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80",
+        "alt": "Panneaux solaires et éoliennes"
       },
-      "language": [
-        {
-          "id": "lang-fr",
-          "name": "Français",
-          "code": "fr"
-        }
-      ]
+      "language": [{ "id": "lang-fr", "name": "Français", "code": "fr" }]
+    },
+    {
+      "__typename": "NodeNewsArticle",
+      "id": "news-space-en",
+      "title": "Mars Mission Achieves Major Breakthrough",
+      "path": "/en/mars-mission-breakthrough",
+      "created": { "timestamp": 1738281600 },
+      "body": {
+        "__typename": "Text",
+        "processed": "<p>Space exploration has reached an exciting new chapter as scientists announce a major breakthrough in Mars research. New data from rover missions has confirmed the existence of extensive ancient water systems on the red planet.</p><p>The discovery suggests that Mars once had conditions suitable for microbial life, with networks of rivers and lakes that existed billions of years ago. This finding has reignited discussions about the possibility of past life on Mars.</p><p>Space agencies are now accelerating plans for human missions to Mars, with the goal of establishing a permanent presence on the planet within the next two decades. The discoveries are also helping scientists better understand Earth's own climate history.</p>"
+      },
+      "summary": {
+        "__typename": "Text",
+        "processed": "Scientists confirm evidence of ancient water systems on Mars, bringing humanity one step closer to understanding the planet's potential for past life."
+      },
+      "image": {
+        "__typename": "Image",
+        "url": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800&q=80",
+        "alt": "Mars surface landscape"
+      },
+      "language": [{ "id": "lang-en", "name": "English", "code": "en" }]
+    },
+    {
+      "__typename": "NodeNewsArticle",
+      "id": "news-space-es",
+      "title": "Misión a Marte Logra un Gran Avance",
+      "path": "/es/mision-marte-avance",
+      "created": { "timestamp": 1738281600 },
+      "body": {
+        "__typename": "Text",
+        "processed": "<p>La exploración espacial ha alcanzado un nuevo capítulo emocionante cuando los científicos anuncian un avance importante en la investigación de Marte. Nuevos datos de misiones de rovers han confirmado la existencia de extensos sistemas de agua antiguos en el planeta rojo.</p><p>El descubrimiento sugiere que Marte una vez tuvo condiciones adecuadas para la vida microbiana, con redes de ríos y lagos que existieron hace miles de millones de años.</p><p>Las agencias espaciales ahora están acelerando los planes para misiones humanas a Marte, con el objetivo de establecer una presencia permanente en el planeta en las próximas dos décadas.</p>"
+      },
+      "summary": {
+        "__typename": "Text",
+        "processed": "Los científicos confirman evidencia de antiguos sistemas de agua en Marte, acercando a la humanidad a comprender el potencial del planeta para la vida pasada."
+      },
+      "image": {
+        "__typename": "Image",
+        "url": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800&q=80",
+        "alt": "Paisaje de la superficie de Marte"
+      },
+      "language": [{ "id": "lang-es", "name": "Español", "code": "es" }]
+    },
+    {
+      "__typename": "NodeNewsArticle",
+      "id": "news-space-fr",
+      "title": "La Mission Mars Réalise une Percée Majeure",
+      "path": "/fr/mission-mars-percee",
+      "created": { "timestamp": 1738281600 },
+      "body": {
+        "__typename": "Text",
+        "processed": "<p>L'exploration spatiale a atteint un nouveau chapitre passionnant alors que les scientifiques annoncent une percée majeure dans la recherche sur Mars. De nouvelles données des missions de rovers ont confirmé l'existence de vastes systèmes d'eau anciens sur la planète rouge.</p><p>La découverte suggère que Mars avait autrefois des conditions propices à la vie microbienne, avec des réseaux de rivières et de lacs qui existaient il y a des milliards d'années.</p><p>Les agences spatiales accélèrent maintenant les plans pour des missions humaines vers Mars, avec l'objectif d'établir une présence permanente sur la planète dans les deux prochaines décennies.</p>"
+      },
+      "summary": {
+        "__typename": "Text",
+        "processed": "Les scientifiques confirment des preuves d'anciens systèmes d'eau sur Mars, rapprochant l'humanité de la compréhension du potentiel de vie passée sur la planète."
+      },
+      "image": {
+        "__typename": "Image",
+        "url": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800&q=80",
+        "alt": "Paysage de la surface de Mars"
+      },
+      "language": [{ "id": "lang-fr", "name": "Français", "code": "fr" }]
+    },
+    {
+      "__typename": "NodeNewsArticle",
+      "id": "news-education-en",
+      "title": "Online Learning Revolution Reshapes Education",
+      "path": "/en/online-learning-revolution",
+      "created": { "timestamp": 1738195200 },
+      "body": {
+        "__typename": "Text",
+        "processed": "<p>The education sector is undergoing a fundamental transformation as online learning platforms continue to evolve and improve. What began as a necessity during global disruptions has become a preferred method of education for millions worldwide.</p><p>Universities and educational institutions are now offering complete degree programs online, with interactive features that rival traditional classroom experiences. Virtual labs, AI tutors, and collaborative tools are making remote learning more engaging than ever.</p><p>This shift is particularly impactful in developing regions, where students can now access world-class education from top institutions without the need to relocate. The democratization of education is creating new opportunities for learners of all backgrounds.</p>"
+      },
+      "summary": {
+        "__typename": "Text",
+        "processed": "Digital platforms are transforming how students learn, making quality education accessible to millions who previously had limited opportunities."
+      },
+      "image": {
+        "__typename": "Image",
+        "url": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80",
+        "alt": "Student learning online"
+      },
+      "language": [{ "id": "lang-en", "name": "English", "code": "en" }]
+    },
+    {
+      "__typename": "NodeNewsArticle",
+      "id": "news-education-es",
+      "title": "La Revolución del Aprendizaje en Línea Transforma la Educación",
+      "path": "/es/revolucion-aprendizaje-linea",
+      "created": { "timestamp": 1738195200 },
+      "body": {
+        "__typename": "Text",
+        "processed": "<p>El sector educativo está experimentando una transformación fundamental a medida que las plataformas de aprendizaje en línea continúan evolucionando y mejorando. Lo que comenzó como una necesidad durante las interrupciones globales se ha convertido en un método preferido de educación.</p><p>Las universidades e instituciones educativas ahora ofrecen programas de grado completos en línea, con características interactivas que rivalizan con las experiencias tradicionales del aula.</p><p>Este cambio es particularmente impactante en las regiones en desarrollo, donde los estudiantes ahora pueden acceder a educación de clase mundial desde las mejores instituciones sin necesidad de reubicarse.</p>"
+      },
+      "summary": {
+        "__typename": "Text",
+        "processed": "Las plataformas digitales están transformando la forma en que los estudiantes aprenden, haciendo que la educación de calidad sea accesible para millones."
+      },
+      "image": {
+        "__typename": "Image",
+        "url": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80",
+        "alt": "Estudiante aprendiendo en línea"
+      },
+      "language": [{ "id": "lang-es", "name": "Español", "code": "es" }]
+    },
+    {
+      "__typename": "NodeNewsArticle",
+      "id": "news-education-fr",
+      "title": "La Révolution de l'Apprentissage en Ligne Transforme l'Éducation",
+      "path": "/fr/revolution-apprentissage-ligne",
+      "created": { "timestamp": 1738195200 },
+      "body": {
+        "__typename": "Text",
+        "processed": "<p>Le secteur de l'éducation connaît une transformation fondamentale alors que les plateformes d'apprentissage en ligne continuent d'évoluer et de s'améliorer. Ce qui a commencé comme une nécessité pendant les perturbations mondiales est devenu une méthode d'éducation préférée.</p><p>Les universités et les établissements d'enseignement proposent désormais des programmes diplômants complets en ligne, avec des fonctionnalités interactives qui rivalisent avec les expériences de classe traditionnelles.</p><p>Ce changement est particulièrement impactant dans les régions en développement, où les étudiants peuvent désormais accéder à une éducation de classe mondiale sans avoir besoin de déménager.</p>"
+      },
+      "summary": {
+        "__typename": "Text",
+        "processed": "Les plateformes numériques transforment la façon dont les étudiants apprennent, rendant une éducation de qualité accessible à des millions de personnes."
+      },
+      "image": {
+        "__typename": "Image",
+        "url": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80",
+        "alt": "Étudiant apprenant en ligne"
+      },
+      "language": [{ "id": "lang-fr", "name": "Français", "code": "fr" }]
+    },
+    {
+      "__typename": "NodeNewsArticle",
+      "id": "news-startup-en",
+      "title": "Global Startup Ecosystem Thrives Despite Challenges",
+      "path": "/en/startup-ecosystem-thrives",
+      "created": { "timestamp": 1738108800 },
+      "body": {
+        "__typename": "Text",
+        "processed": "<p>The global startup ecosystem has shown remarkable resilience, with entrepreneurs continuing to launch innovative ventures despite economic uncertainties. New data shows that startup formation rates have reached historic highs in many regions.</p><p>Emerging markets are particularly noteworthy, with cities in Asia, Africa, and Latin America becoming vibrant tech hubs. These regions are producing solutions tailored to local needs while also scaling globally.</p><p>Venture capital investment patterns are also shifting, with investors increasingly looking beyond traditional tech centers. This diversification is bringing fresh perspectives and innovative solutions to global challenges in healthcare, climate, and finance.</p>"
+      },
+      "summary": {
+        "__typename": "Text",
+        "processed": "Entrepreneurs worldwide are launching innovative ventures at record rates, with emerging markets becoming new hubs for technological innovation."
+      },
+      "image": {
+        "__typename": "Image",
+        "url": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80",
+        "alt": "Startup team working together"
+      },
+      "language": [{ "id": "lang-en", "name": "English", "code": "en" }]
+    },
+    {
+      "__typename": "NodeNewsArticle",
+      "id": "news-startup-es",
+      "title": "El Ecosistema Global de Startups Prospera a Pesar de los Desafíos",
+      "path": "/es/ecosistema-startups-prospera",
+      "created": { "timestamp": 1738108800 },
+      "body": {
+        "__typename": "Text",
+        "processed": "<p>El ecosistema global de startups ha mostrado una resiliencia notable, con emprendedores que continúan lanzando empresas innovadoras a pesar de las incertidumbres económicas. Nuevos datos muestran que las tasas de formación de startups han alcanzado máximos históricos.</p><p>Los mercados emergentes son particularmente notables, con ciudades en Asia, África y América Latina convirtiéndose en vibrantes centros tecnológicos. Estas regiones están produciendo soluciones adaptadas a las necesidades locales.</p><p>Los patrones de inversión de capital de riesgo también están cambiando, con inversores mirando cada vez más allá de los centros tecnológicos tradicionales.</p>"
+      },
+      "summary": {
+        "__typename": "Text",
+        "processed": "Los emprendedores de todo el mundo están lanzando empresas innovadoras a tasas récord, con los mercados emergentes convirtiéndose en nuevos centros de innovación."
+      },
+      "image": {
+        "__typename": "Image",
+        "url": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80",
+        "alt": "Equipo de startup trabajando juntos"
+      },
+      "language": [{ "id": "lang-es", "name": "Español", "code": "es" }]
+    },
+    {
+      "__typename": "NodeNewsArticle",
+      "id": "news-startup-fr",
+      "title": "L'Écosystème Mondial des Startups Prospère Malgré les Défis",
+      "path": "/fr/ecosysteme-startups-prospere",
+      "created": { "timestamp": 1738108800 },
+      "body": {
+        "__typename": "Text",
+        "processed": "<p>L'écosystème mondial des startups a fait preuve d'une résilience remarquable, les entrepreneurs continuant à lancer des entreprises innovantes malgré les incertitudes économiques. De nouvelles données montrent que les taux de création de startups ont atteint des sommets historiques.</p><p>Les marchés émergents sont particulièrement remarquables, avec des villes en Asie, en Afrique et en Amérique latine devenant des pôles technologiques dynamiques.</p><p>Les modèles d'investissement en capital-risque évoluent également, les investisseurs regardant de plus en plus au-delà des centres technologiques traditionnels.</p>"
+      },
+      "summary": {
+        "__typename": "Text",
+        "processed": "Les entrepreneurs du monde entier lancent des entreprises innovantes à des taux records, les marchés émergents devenant de nouveaux pôles d'innovation."
+      },
+      "image": {
+        "__typename": "Image",
+        "url": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80",
+        "alt": "Équipe de startup travaillant ensemble"
+      },
+      "language": [{ "id": "lang-fr", "name": "Français", "code": "fr" }]
+    },
+    {
+      "__typename": "NodeNewsArticle",
+      "id": "news-ocean-en",
+      "title": "Ocean Exploration Reveals Stunning New Discoveries",
+      "path": "/en/ocean-exploration-discoveries",
+      "created": { "timestamp": 1738022400 },
+      "body": {
+        "__typename": "Text",
+        "processed": "<p>Marine scientists are making remarkable discoveries in the depths of our oceans, revealing ecosystems and species that were previously unknown to science. Recent expeditions have documented hundreds of new species in just the past year.</p><p>Advanced submersible technology and improved deep-sea cameras are enabling researchers to explore areas that were once inaccessible. These explorations are revealing complex ecosystems thriving in extreme conditions, from hydrothermal vents to deep-sea trenches.</p><p>The discoveries have important implications for understanding climate change, developing new medicines, and protecting marine biodiversity. Scientists estimate that over 80% of the ocean remains unexplored, promising many more discoveries to come.</p>"
+      },
+      "summary": {
+        "__typename": "Text",
+        "processed": "Deep-sea expeditions are uncovering new species and ecosystems, highlighting how much of our planet's oceans remain unexplored and full of wonder."
+      },
+      "image": {
+        "__typename": "Image",
+        "url": "https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=800&q=80",
+        "alt": "Deep ocean underwater scene"
+      },
+      "language": [{ "id": "lang-en", "name": "English", "code": "en" }]
+    },
+    {
+      "__typename": "NodeNewsArticle",
+      "id": "news-ocean-es",
+      "title": "La Exploración Oceánica Revela Nuevos Descubrimientos Asombrosos",
+      "path": "/es/exploracion-oceano-descubrimientos",
+      "created": { "timestamp": 1738022400 },
+      "body": {
+        "__typename": "Text",
+        "processed": "<p>Los científicos marinos están haciendo descubrimientos notables en las profundidades de nuestros océanos, revelando ecosistemas y especies que antes eran desconocidos para la ciencia. Las expediciones recientes han documentado cientos de nuevas especies solo en el último año.</p><p>La tecnología avanzada de sumergibles y las cámaras de aguas profundas mejoradas están permitiendo a los investigadores explorar áreas que antes eran inaccesibles.</p><p>Los descubrimientos tienen implicaciones importantes para comprender el cambio climático, desarrollar nuevos medicamentos y proteger la biodiversidad marina.</p>"
+      },
+      "summary": {
+        "__typename": "Text",
+        "processed": "Las expediciones a las profundidades marinas están descubriendo nuevas especies y ecosistemas, destacando cuánto de los océanos de nuestro planeta permanece sin explorar."
+      },
+      "image": {
+        "__typename": "Image",
+        "url": "https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=800&q=80",
+        "alt": "Escena submarina del océano profundo"
+      },
+      "language": [{ "id": "lang-es", "name": "Español", "code": "es" }]
+    },
+    {
+      "__typename": "NodeNewsArticle",
+      "id": "news-ocean-fr",
+      "title": "L'Exploration Océanique Révèle de Nouvelles Découvertes Étonnantes",
+      "path": "/fr/exploration-ocean-decouvertes",
+      "created": { "timestamp": 1738022400 },
+      "body": {
+        "__typename": "Text",
+        "processed": "<p>Les scientifiques marins font des découvertes remarquables dans les profondeurs de nos océans, révélant des écosystèmes et des espèces jusqu'alors inconnus de la science. Les expéditions récentes ont documenté des centaines de nouvelles espèces rien que l'année dernière.</p><p>La technologie avancée des submersibles et les caméras sous-marines améliorées permettent aux chercheurs d'explorer des zones auparavant inaccessibles.</p><p>Les découvertes ont des implications importantes pour la compréhension du changement climatique, le développement de nouveaux médicaments et la protection de la biodiversité marine.</p>"
+      },
+      "summary": {
+        "__typename": "Text",
+        "processed": "Les expéditions en eaux profondes découvrent de nouvelles espèces et écosystèmes, soulignant à quel point nos océans restent inexplorés et pleins de merveilles."
+      },
+      "image": {
+        "__typename": "Image",
+        "url": "https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=800&q=80",
+        "alt": "Scène sous-marine de l'océan profond"
+      },
+      "language": [{ "id": "lang-fr", "name": "Français", "code": "fr" }]
     }
   ]
 }
