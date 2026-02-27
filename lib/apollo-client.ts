@@ -41,6 +41,9 @@ export function getServerApolloClient(requestHeaders: Headers): ApolloClient<any
 
   const httpLink = createHttpLink({
     uri: `${origin}/api/graphql`,
+    // Tag fetch requests so revalidateTag('drupal') clears the Data Cache
+    fetch: (uri: RequestInfo | URL, options?: RequestInit) =>
+      fetch(uri, { ...options, next: { tags: ['drupal'] } } as RequestInit),
   })
 
   const authLink = setContext((_, { headers }) => {

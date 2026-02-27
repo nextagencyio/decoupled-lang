@@ -1,20 +1,45 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { revalidatePath } from 'next/cache'
+import { revalidatePath, revalidateTag } from 'next/cache'
 
 export async function POST(request: NextRequest) {
-  const secret = request.headers.get('x-revalidate-secret')
+  const expectedSecret = process.env.DRUPAL_REVALIDATE_SECRET
 
-  if (secret !== process.env.DRUPAL_REVALIDATE_SECRET) {
-    return NextResponse.json({ error: 'Invalid secret' }, { status: 401 })
+  if (!expectedSecret) {
+    return NextResponse.json({ message: 'Revalidate secret not configured' }, { status: 500 })
   }
 
   try {
-    const body = await request.json()
-    const { path } = body
+    // Parse the request - Drupal sends form_params (application/x-www-form-urlencoded)
+    const contentType = request.headers.get('content-type') || ''
+    let secret: string | null = null
+    let slug: string | null = null
 
-    if (path) {
+    if (contentType.includes('application/x-www-form-urlencoded')) {
+      const formData = await request.formData()
+      secret = formData.get('secret') as string
+      slug = formData.get('slug') as string
+    } else {
+      // Fallback: JSON body or header-based auth
+      const body = await request.json()
+      secret = body.secret || request.headers.get('x-revalidate-secret')
+      slug = body.slug || body.path
+    }
+
+    if (secret !== expectedSecret) {
+      return NextResponse.json({ message: 'Invalid secret' }, { status: 401 })
+    }
+
+    // Clear the Data Cache for all Drupal GraphQL fetches (expire immediately)
+    revalidateTag('drupal', { expire: 0 })
+
+    if (slug) {
+      // Convert slug to path (ensure leading slash)
+      const path = slug.startsWith('/') ? slug : `/${slug}`
       revalidatePath(path)
-      return NextResponse.json({ revalidated: true, path })
+
+      console.log(`Revalidated: ${path} (tag: drupal)`)
+
+      return NextResponse.json({ revalidated: true, path, timestamp: Date.now() })
     }
 
     // Revalidate all locale paths if no specific path provided
@@ -22,10 +47,13 @@ export async function POST(request: NextRequest) {
     revalidatePath('/es')
     revalidatePath('/fr')
 
-    return NextResponse.json({ revalidated: true, paths: ['/en', '/es', '/fr'] })
+    console.log('Revalidated: /en, /es, /fr (tag: drupal)')
+
+    return NextResponse.json({ revalidated: true, paths: ['/en', '/es', '/fr'], timestamp: Date.now() })
   } catch (error) {
+    console.error('Revalidation error:', error)
     return NextResponse.json(
-      { error: 'Failed to revalidate', details: error instanceof Error ? error.message : 'Unknown error' },
+      { message: 'Revalidation failed' },
       { status: 500 }
     )
   }
